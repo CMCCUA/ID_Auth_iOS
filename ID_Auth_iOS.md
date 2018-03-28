@@ -409,16 +409,13 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 | privacyTextColr        | 隐私条款文字颜色                                   | UIColor            | 必须嵌套在privacyProperty          | 2        |
 | UserServiceText        | 开发者用户协议文本内容                             | NSString           | 必须嵌套在privacyProperty          | 2        |
 | termTextColr           | 开发者用户协议字体颜色                             | UIColor            | 必须嵌套在privacyProperty          | 2        |
-| privateTextOffsetY     | 隐私条款整体Y轴偏移量调整                          | NSNumber           | 必须嵌套在privacyProperty          | 2        |
 | privateTextURL         | 用户自定义的条款页面链接                           | NSString           | 必须嵌套在privacyProperty          | 2        |
 | APPLogo                | 应用logo                                           | UIImage            | 必须嵌套在authPage                 | 2        |
 | APPLogoHidden          | 隐藏应用logo，YES时隐藏，NO时显示                  | Bool               | 必须嵌套在authPage                 | 2        |
-| APPLogoOffsetY         | logo图片Y轴偏移量调整                              | NSNumber           | 必须嵌套在authPage                 | 2        |
 | logoWidth              | logo图片宽                                         | NSNumber           | 必须嵌套在authPage                 | 2        |
 | logoHeight             | logo图片高                                         | NSNumber           | 必须嵌套在authPage                 | 2        |
 | numFieldBgColr         | 手机号码框背景颜色                                 | UIColor            | 必须嵌套在authPage                 | 2        |
 | numFieldTextColr       | 手机号码框文字颜色                                 | UIColor            | 必须嵌套在authPage                 | 2        |
-| numFieldVisability     | 本机号码框隐藏开关                                 | Bool               | 必须嵌套在authPage                 | 2        |
 | switchAccHidden        | 隐藏“切换账号”，YES时隐藏，NO时显示                | Bool               | 必须嵌套在authPage                 | 2        |
 | switchAccTextColr      | “切换账号”文字颜色                                 | UIColor            | 必须嵌套在authPage                 | 2        |
 | customView1Y           | 第一个customView的Y轴偏移量调整                    | NSNumber           | 必须嵌套在authPage                 | 2        |
@@ -456,6 +453,12 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
       @"APPLogoHideen":@(NO), // 隐藏logo开关
       @"logAbleButtonBgColr":switchTextColor,//登录按钮背景色
       @"numFieldBgColr":switchTextColor,//本机号码框背景颜色
+      //@"customView1Y":@121,//自定义底部界面Y调整
+      //@"customView1H":@122,//自定义底部界面高度
+      //@"customView2Y":@122,//自定义中间界面Y调整
+      //@"customView2H":@122,//自定义中间界面高度
+      //@"customView3Y":@122,//自定义顶部界面Y调整
+      //@"customView3H":@121,//自定义顶部界面高度
    	},
     @"privacyProperty" : @{
      	@ "CheckBoxImg": [UIImage imageNamed: @ "qqq.png"], //隐私条款的checkbox
@@ -464,7 +467,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 		@ "privateTextColr": [UIColor orangeColor], // 协议字体颜色
 		@ "termTextColr": [UIColor redColor], //条款字体颜色
 		@ "userServiceTipColor": [UIColor blueColor],
-		@ "privateTextOffsetY": @0,
+		
      },
 }
         customViews: ^ (NSDictionary * customAreaView) {
