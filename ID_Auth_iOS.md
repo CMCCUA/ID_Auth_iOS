@@ -412,8 +412,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 | privateTextURL         | 用户自定义的条款页面链接                           | NSString           | 必须嵌套在privacyProperty          | 2        |
 | APPLogo                | 应用logo                                           | UIImage            | 必须嵌套在authPage                 | 2        |
 | APPLogoHidden          | 隐藏应用logo，YES时隐藏，NO时显示                  | Bool               | 必须嵌套在authPage                 | 2        |
-| logoWidth              | logo图片宽                                         | NSNumber           | 必须嵌套在authPage                 | 2        |
-| logoHeight             | logo图片高                                         | NSNumber           | 必须嵌套在authPage                 | 2        |
+| appNameHidden          |  App名称隐藏按钮  YES时隐藏，NO时显示                 | Bool         	  | 必须嵌套在authPage                 | 2        |
 | numFieldBgColr         | 手机号码框背景颜色                                 | UIColor            | 必须嵌套在authPage                 | 2        |
 | numFieldTextColr       | 手机号码框文字颜色                                 | UIColor            | 必须嵌套在authPage                 | 2        |
 | switchAccHidden        | 隐藏“切换账号”，YES时隐藏，NO时显示                | Bool               | 必须嵌套在authPage                 | 2        |
