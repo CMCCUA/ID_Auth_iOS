@@ -366,7 +366,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 
 ```objective-c
 + (void)customUIWithParams:(NSDictionary *)customUIParams
-               customViews:(void(^)(NSDictionary *customAreaView))customViews;
+               customViews:(void(^)(UIView *customAreaView))customViews;
 ```
 
 ### 2.5.2. 参数说明
@@ -376,7 +376,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 | 参数           | 类型                                  | 说明                                                         | 是否必填 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------ | -------- |
 | customUIParams | NSDictionary                          | 用户编辑自定义UI属性                                         | 否       |
-| customViews    | void(^)(NSDictionary *customAreaView) | 用户添加自定义视图，仅支持授权页。共支持三个开发者自定义的试图：customView1；customView2；customView3 | 否       |
+| customViews    | void(^)(UIView *customAreaView) | 用户添加自定义视图（开发者可自定义界面个数和坐标设置），仅支持授权页。 | 否       |
 
 **响应参数**
 
@@ -463,7 +463,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 		
      },
 }
-        customViews: ^ (NSDictionary * customAreaView) {
+        customViews: ^ (UIView * customAreaView) {
 	if (customAreaView) {
            UIView *authView1 = [[UIView alloc]initWithFrame:CGRectMake(30, 30, 160, 33) ];
            authView1.backgroundColor = [UIColor redColor];
