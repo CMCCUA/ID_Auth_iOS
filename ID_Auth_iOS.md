@@ -397,7 +397,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
 | privacyProperty        | 隐私条款区域                                       | NSDictionary       | 否                                 | 1        |
 | navBgColr              | 导航栏背景色                                       | UIColor            | 否                                 | 1        |
 | navLeftImg             | 导航栏返回图标                                     | UIImage            | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
-| navTitle               | 导航栏文字                                         | NSAttributedString | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
+| navAttrTitle           | 导航栏文字                                         | NSAttributedString | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
 | navRightItem           | 导航栏右侧控件                                     | UIButton           | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
 | pageBgColr             | 页面背景颜色（背景颜色和图片属性只能同时存在一个） | UIColor            | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
 | logAbleButtonBgColr    | 登录按钮有效时颜色                                 | UIColor            | 是，不嵌套时同时应用在授权和短验页 | 1/2      |
@@ -432,7 +432,7 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
   
    @"authPage" : @{
       @"navLeftImg":logo,
-      @"navTitle":title,
+      @"navAttrTitle":title,
       @"navRightItem":btn,
 //    @"pageBgColr":bgcolor, //背景颜色
       @"pageBgBgImg":bgImage, // 背景图片
@@ -446,18 +446,12 @@ SDK**登录授权页**和**短信验证码页面**部分元素可供开发者编
       @"APPLogoHideen":@(NO), // 隐藏logo开关
       @"logAbleButtonBgColr":switchTextColor,//登录按钮背景色
       @"numFieldBgColr":switchTextColor,//本机号码框背景颜色
-      //@"customView1Y":@121,//自定义底部界面Y调整
-      //@"customView1H":@122,//自定义底部界面高度
-      //@"customView2Y":@122,//自定义中间界面Y调整
-      //@"customView2H":@122,//自定义中间界面高度
-      //@"customView3Y":@122,//自定义顶部界面Y调整
-      //@"customView3H":@121,//自定义顶部界面高度
    	},
     @"privacyProperty" : @{
      	@ "CheckBoxImg": [UIImage imageNamed: @ "qqq.png"], //隐私条款的checkbox
 		@ "UAUserServiceText": @ "开发者协议", //开发者的协议
 		@ "privacyCheckBoxColr": @(NO), //勾选按钮颜色
-		@ "privateTextColr": [UIColor orangeColor], // 协议字体颜色
+		@ "privacyTextColr": [UIColor orangeColor], // 协议字体颜色
 		@ "termTextColr": [UIColor redColor], //条款字体颜色
 		@ "userServiceTipColor": [UIColor blueColor],
 		
